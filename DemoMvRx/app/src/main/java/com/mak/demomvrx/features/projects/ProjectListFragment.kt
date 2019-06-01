@@ -42,33 +42,41 @@ class ProjectListFragment : BaseFragment() {
         }
         content {
             id("AboutContent")
-            content("Hi, I am Kit. A developer focuses on mobile development. Currently being an enthusiast of Kotlin. Love to try and learn new things." )
+            content("Hi, I am Kit. A developer focuses on mobile development. Currently being an enthusiast of Kotlin. Love to try and learn new things.")
             spanSizeOverride { _, _, _ -> 2 }
         }
         space {
             id("s2")
         }
-        marquee {
-            id("ProjectTitle")
-            title("Projects")
-            spanSizeOverride { _, _, _ -> 2 }
-        }
-        space {
-            id("s1")
-        }
-        state.projects.forEach {
-            projectThumbnail {
-                id(it.project.id)
-                model(it)
-                clickListener { model, parentView, clickedView, position ->
-                    navigateTo(
-                        actionId = R.id.actionOpenDetail,
-                        arg = ProjectDetailArgs(model.model().project.id)
-                    )
+
+        state.projects
+            .groupBy { it.project.projectType }
+            .forEach {
+                space {
+                    id("space",it.key)
                 }
-                spanSizeOverride { _, _, _ -> 1 }
+                marquee {
+                    id(it.key)
+                    title(it.key)
+                    spanSizeOverride { _, _, _ -> 2 }
+                }
+                it.value.forEach {
+                    projectThumbnail {
+                        id(it.project.id)
+                        model(it)
+                        clickListener { model, parentView, clickedView, position ->
+                            navigateTo(
+                                actionId = R.id.actionOpenDetail,
+                                arg = ProjectDetailArgs(model.model().project.id)
+                            )
+                        }
+                        spanSizeOverride { _, _, _ -> 1 }
+                    }
+                }
+
             }
-        }
+
+
         space {
             id("s3")
         }

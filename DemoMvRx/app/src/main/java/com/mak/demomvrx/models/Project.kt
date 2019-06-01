@@ -9,6 +9,7 @@ data class Project(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     @DrawableRes val thumbnailRes: Int,
+    val projectType: String,
     val name: String,
     val time: String,
     val language: String,
