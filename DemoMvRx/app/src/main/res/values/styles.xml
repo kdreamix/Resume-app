@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+
+        <!-- New MaterialComponents attributes. -->
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <!--<item name="colorOnPrimary">@color/my_app_color_on_primary</item>-->
+        <!--<item name="colorOnSecondary">@color/my_app_color_on_secondary</item>-->
+        <!--<item name="colorOnBackground">@color/my_app_color_on_background</item>-->
+        <!--<item name="colorOnError">@color/my_app_color_on_error</item>-->
+        <!--<item name="colorOnSurface">@color/my_app_color_on_surface</item>-->
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+
+        <item name="textAppearanceHeadline1">@style/h1</item>
+        <item name="textAppearanceHeadline2">@style/h2</item>
+        <item name="textAppearanceHeadline3">@style/h3</item>
+        <item name="textAppearanceHeadline4">@style/h4</item>
+        <item name="textAppearanceHeadline5">@style/h5</item>
+        <item name="textAppearanceHeadline6">@style/h6</item>
+        <item name="textAppearanceSubtitle1">@style/s1</item>
+        <item name="textAppearanceSubtitle2">@style/s2</item>
+        <item name="textAppearanceBody1">@style/b1</item>
+        <item name="textAppearanceBody2">@style/b2</item>
+        <item name="textAppearanceCaption">@style/caption</item>
+        <item name="textAppearanceButton">@style/button</item>
+        <item name="textAppearanceOverline">@style/overline</item>
+    </style>
+
+    <style name="h1" parent="@style/TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textAppearance">@style/highEmphasis</item>
+
+    </style>
+    <style name="h2" parent="@style/TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textAppearance">@style/highEmphasis</item>
+
+    </style>
+    <style name="h3" parent="@style/TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textAppearance">@style/highEmphasis</item>
+
+    </style>
+    <style name="h4" parent="@style/TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textAppearance">@style/highEmphasis</item>
+
+    </style>
+    <style name="h5" parent="@style/TextAppearance.MaterialComponents.Headline5">
+
+    </style>
+    <style name="h6" parent="@style/TextAppearance.MaterialComponents.Headline6">
+
+    </style>
+    <style name="s1" parent="@style/TextAppearance.MaterialComponents.Subtitle1">
+
+    </style>
+    <style name="s2" parent="@style/TextAppearance.MaterialComponents.Subtitle2">
+
+    </style>
+    <style name="b1" parent="@style/TextAppearance.MaterialComponents.Body1">
+        <item name="android:textAppearance">@style/lowEmphasis</item>
+        <item name="fontFamily">@font/rubik_light</item>
+    </style>
+    <style name="b2" parent="@style/TextAppearance.MaterialComponents.Body2">
+        <item name="android:textAppearance">@style/lowEmphasis</item>
+        <item name="fontFamily">@font/rubik_light</item>
+    </style>
+    <style name="caption" parent="@style/TextAppearance.MaterialComponents.Caption">
+
+    </style>
+    <style name="button" parent="@style/TextAppearance.MaterialComponents.Button">
+
+    </style>
+    <style name="overline" parent="@style/TextAppearance.MaterialComponents.Overline">
+
+    </style>
+    <style name="highEmphasis">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+    <style name="mediumEmphasis">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+    <style name="lowEmphasis">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:alpha">0.38</item>
+    </style>
+
+
+
+
+</resources>

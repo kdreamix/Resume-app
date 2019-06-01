@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_graph"
+    app:startDestination="@id/projectListFragment">
+
+    <fragment
+        android:id="@+id/projectListFragment"
+        android:name="com.mak.demomvrx.features.projects.ProjectListFragment"
+        android:label="Project list">
+        <action
+            android:id="@+id/actionOpenDetail"
+            app:destination="@id/projectDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectDetailFragment"
+        android:name="com.mak.demomvrx.features.projects.ProjectDetailFragment"
+        android:label="ProjectDetailFragment" />
+</navigation>
